@@ -16,10 +16,15 @@ body {
     height: 100vh;
 }
 
-
 .interface {
     max-width: 1280px;
     margin: 0 auto;
+}
+
+header .interface img, footer .flex img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
 }
 
 .flex {
@@ -117,6 +122,14 @@ section.site-top .flex {
     animation: float 2s ease-in-out infinite alternate;
 }
 
+.site-top .img-site-top img {
+    width: 300px;
+    height: 300px;
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0 0 40px #00FF08;
+}
+
 
 @keyframes float {
     0% {
@@ -169,6 +182,14 @@ section.about {
 section.about .flex {
     align-items: center;
     gap: 60px;
+}
+
+section.about .flex img {
+    height: 400px;
+    width: 350px;
+    border: 0;
+    border-radius: 20px;
+    /*box-shadow: 0 0 40px #00FF08;*/
 }
 
 .about .txt-about {
@@ -320,11 +341,6 @@ footer .flex {
     justify-content: space-between;
 }
 
-footer .flex img {
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-}
 
 footer .line-footer {
     padding: 20px 0;
@@ -342,4 +358,98 @@ footer .line-footer p i{
 footer .line-footer p a {
     color: #fff;
     text-decoration: none;
+}
+
+
+/* Resposividade */
+
+@media screen and (max-width: 1020px) {
+
+    /* gerais */
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .site-top .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.title {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /* Cabeçalho */
+    .menu-desktop, .btn-contact {
+        display: none;
+    }
+
+    /* Topo do Site*/
+    section.site-top  {
+        padding: 20px 10%;
+    }
+
+    .site-top h1 {
+        font-size: 30px;
+    }
+
+    .site-top .img-site-top {
+        width: 100%;
+    }
+
+    /* Especialidades */
+    section.specialty {
+        padding: 40px 8%;
+    }
+
+    /* Sobre mim */
+    section.about {
+        padding: 80px 8%;
+    }
+
+    section.about .txt-about h2 {
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+    
+
+    /* Portfólio */
+    section.portfolio {
+        padding: 80px 8%;
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portfolio .flex {
+        gap: 60px;
+    }
+
+    /* Fala Comigo */
+    section.talk-to-me {
+        padding: 80px 8%;
+    }
+
+    section.talk-to-me .interface h2 {
+        margin-bottom: 30px;
+    }
+
+    /* Rodapé */
+    footer .flex {
+        flex-direction: column;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
 }
