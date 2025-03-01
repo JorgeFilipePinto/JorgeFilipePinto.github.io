@@ -403,6 +403,11 @@ footer .line-footer p a {
         padding: 40px 8%;
     }
 
+    .specialty .specialty-box:active {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px #ffffff78;
+    }
+
     /* Sobre mim */
     section.about {
         padding: 80px 8%;
