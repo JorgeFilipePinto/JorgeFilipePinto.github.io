@@ -27,6 +27,9 @@ header .interface img, footer .flex img {
     border-radius: 10px;
 }
 
+.flex {
+    display: flex;
+}
 
 .btn-contact button{
     padding: 10px 40px;

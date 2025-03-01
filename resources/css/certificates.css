@@ -130,3 +130,93 @@ section.certificates .flex {
     box-shadow: 0 0 20px #ffffff78;
     cursor: pointer;
 }
+
+/* Formação académica */
+
+section.formation {
+    padding: 40px 4%;
+}
+
+section.formation .interface h1 {
+    font-size: 40px;
+}
+
+section.formation .flex {
+    gap: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo Rodapé */
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    background-color: #00FF08;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+#codecademy {
+    width: 26px;
+    height: auto;
+    border-radius: 0;
+}
+
+footer {
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #ffffff25;
+}
+
+
+footer .flex {
+    justify-content: space-between;
+}
+
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.border {
+    border-bottom: 2px solid #00FF08;
+}
+
+footer .line-footer p i{
+    color: #00FF08;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #fff;
+    text-decoration: none;
+}

@@ -74,3 +74,62 @@ header nav ul li {
     display: inline-block;
     padding: 0 40px;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo Rodapé */
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    background-color: #00FF08;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+#codecademy {
+    width: 26px;
+    height: auto;
+    border-radius: 0;
+}
+
+footer {
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #ffffff25;
+}
+
+
+footer .flex {
+    justify-content: space-between;
+}
+
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.border {
+    border-bottom: 2px solid #00FF08;
+}
+
+footer .line-footer p i{
+    color: #00FF08;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #fff;
+    text-decoration: none;
+}
