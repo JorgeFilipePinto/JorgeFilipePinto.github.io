@@ -12,7 +12,7 @@
 /* geral */
 
 body {
-    background-color: black;
+    background-color: #000;
     height: 100vh;
 }
 
@@ -215,13 +215,19 @@ section.about .flex img {
 .btn-social button {
     width: 60px;
     height: 60px;
-    border-radius: 30px;
+    border-radius: 20px;
     border: none;
     background-color: #00FF08;
     font-size: 22px;
     cursor: pointer;
     margin: 0 5px;
     transition: .2s;
+}
+
+#codecademy {
+    width: 26px;
+    height: auto;
+    border-radius: 0;
 }
 
 /* portfolio */
@@ -403,11 +409,6 @@ footer .line-footer p a {
         padding: 40px 8%;
     }
 
-    .specialty .specialty-box:active {
-        transform: scale(1.05);
-        box-shadow: 0 0 20px #ffffff78;
-    }
-
     /* Sobre mim */
     section.about {
         padding: 80px 8%;
@@ -422,7 +423,6 @@ footer .line-footer p a {
     .btn-social {
         text-align: center;
     }
-    
 
     /* Portfólio */
     section.portfolio {
