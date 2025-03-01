@@ -27,9 +27,6 @@ header .interface img, footer .flex img {
     border-radius: 10px;
 }
 
-.flex {
-    display: flex;
-}
 
 .btn-contact button{
     padding: 10px 40px;
@@ -58,7 +55,7 @@ button:hover, form .btn-submit input[type=submit]:hover {
 
 /* cabeçalho */
 header {
-    padding: 40px;
+    padding: 40px 4%;
 }
 
 
@@ -308,7 +305,6 @@ form input, form textarea {
     color: #fff;
     font-size: 18px;
 }
-
 
 form textarea {
     resize: none;

@@ -1,0 +1,132 @@
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Geral */
+
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+header .interface img, footer .flex img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.btn-contact button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00FF08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover, form .btn-submit input[type=submit]:hover {
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.05);
+}
+
+.title {
+    color: #fff;
+    text-align: center;
+}
+
+.title span {
+    color: #00FF08;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Cabeçalho */
+
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+/* Certificados */
+
+section.certificates {
+    padding: 40px 4%;
+}
+
+section.certificates .interface h1 {
+    font-size: 40px;
+}
+
+section.certificates .flex {
+    gap: 60px;
+}
+
+.certificates .certificate-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.certificates .certificate-box a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.certificates .certificate-box h2 span {
+    color: #00FF08;
+}
+
+.certificates .certificate-box i {
+    font-size: 50px;
+}
+
+.certificates .certificate-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+    cursor: pointer;
+}
