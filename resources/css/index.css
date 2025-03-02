@@ -288,6 +288,10 @@ section.talk-to-me {
     padding: 80px 4%;
 }
 
+section.talk-to-me h2 {
+    margin-bottom: 30px;
+}
+
 
 form {
     max-width: 500px;
@@ -441,10 +445,6 @@ footer .line-footer p a {
     /* Fala Comigo */
     section.talk-to-me {
         padding: 80px 8%;
-    }
-
-    section.talk-to-me .interface h2 {
-        margin-bottom: 30px;
     }
 
     /* Rodapé */
