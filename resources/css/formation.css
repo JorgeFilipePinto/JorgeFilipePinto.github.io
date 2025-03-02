@@ -45,6 +45,10 @@ button:hover, form .btn-submit input[type=submit]:hover {
     transform: scale(1.05);
 }
 
+.title span {
+    color: #00FF08;
+}
+
 
 
 /* Cabeçalho */
@@ -81,9 +85,46 @@ header nav ul li {
 }
 
 
+/* formation-box */
 
+section.formation {
+    padding: 40px 4%;
+}
 
+section.formation .flex {
+    justify-content: center;
+    gap: 60px;
+}
 
+section.formation .flex a {
+    text-decoration: none;
+}
+
+.formation .formation-box {
+    text-align: center;
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.formation .formation-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+#estgl-logo {
+    margin-top: 20px;
+    width: 150px;
+    height: 100px;
+}
+
+#formation-logo {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+}
 
 
 
