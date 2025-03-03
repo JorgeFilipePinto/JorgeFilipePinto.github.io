@@ -39,7 +39,7 @@ header .interface img, footer .flex img {
     cursor: pointer;
 }
 
-button:hover, form .btn-submit input[type=submit]:hover {
+button:hover:hover {
     box-shadow: 0px 0px 8px #00ff08;
     transform: scale(1.05);
 }
