@@ -126,6 +126,10 @@ section.languages .flex {
     box-shadow: 0 0 20px #ffffff78;
 }
 
+.languages .languages-box h3, .languages .languages-box p {
+    text-align: center;
+}
+
 
 /* hard skills */
 
@@ -179,6 +183,10 @@ section.programming-languages .flex {
     transition: .2s;
 }
 
+.programming-languages .programming-languages-box h3 {
+    text-align: center;
+}
+
 
 .programming-languages .programming-languages-box:hover {
     transform: scale(1.05);
@@ -217,6 +225,10 @@ section.frameworks .flex {
 .frameworks .frameworks-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #ffffff78;
+}
+
+.frameworks .frameworks-box h3 {
+    text-align: center;
 }
 
 .frameworks .interface .flex img {
@@ -279,6 +291,10 @@ section.software-tools .flex {
 .software-tools .software-tools-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #ffffff78;
+}
+
+.software-tools .software-tools-box h3 {
+    text-align: center;
 }
 
 .software-tools .interface .flex img {
