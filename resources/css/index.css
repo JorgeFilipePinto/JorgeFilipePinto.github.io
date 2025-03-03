@@ -51,7 +51,7 @@ h2.title span {
     color: #00FF08;
 }
 
-button:hover, form .btn-submit input[type=submit]:hover {
+button:hover, form .btn-submit input:hover {
     box-shadow: 0px 0px 8px #00ff08;
     transform: scale(1.05);
 }
@@ -327,7 +327,7 @@ form .btn-submit {
 }
 
 
-form .btn-submit input[type=submit] {
+form .btn-submit input {
     width: 120px;
     background-color: #00FF08;
     color: #000;
@@ -336,6 +336,9 @@ form .btn-submit input[type=submit] {
     transition: .2s;
 }
 
+form .btn-submit input[type="reset"] {
+    margin-left: 20px;
+}
 /* Estilo Rodapé */
 
 footer {

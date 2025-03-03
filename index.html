@@ -20,7 +20,7 @@
     <header>
         <div class="interface">
             <div class="logo">
-                <a href="#">
+                <a href="#about">
                     <img src="resources/images/logo.jpg" alt="Jorge Pinto logo">
                 </a>
             </div><!--logo-->
@@ -53,7 +53,7 @@
                         <h1>TRANSFORMAR AS SUAS IDEIAS EM REALIDADES DIGITAIS<span>.</span></h1>
                         <p>As ideias permanecem apenas conceitos até que as transformemos em realidade. Estou pronto para ouvir as suas e dar-lhes vida.</p>
                         <div class="btn-contact">
-                            <a href="#">
+                            <a href="#talk-to-me">
                                 <button>Entre em Contacto</button>
                             </a>
                         </div>
@@ -88,7 +88,7 @@
             </div><!-- interface -->
         </section><!-- specialty  -->
         
-        <section class="about">
+        <section class="about" id="about">
             <div class="interface">
                 <div class="flex">
                     <div class="img-about">
@@ -131,14 +131,20 @@
         <section id="talk-to-me" class="talk-to-me">
             <div class="interface">
                 <h2 class="title">FALE <span>COMIGO.</span></h2>
-                <form action="">
-                    <input type="text" name="" id="name" placeholder="O SEU NOME" required>
-                    <input type="text" name="" id="company" placeholder="EMPRESA">
-                    <input type="email" name="" id="email" placeholder="O SEU EMAIL" required>
-                    <input type="tel" name="" id="tel" placeholder="O SEU CONTACTO">
-                    <textarea name="" id="" placeholder="A SUA MENSAGEM" required></textarea>
-                    <div class="btn-submit"><input type="submit" value="ENVIAR"></div>
+
+                <form action="https://formspree.io/f/xzzdnyay"
+                method="POST">
+                    <input type="text" name="name" id="name" placeholder="O SEU NOME" required>
+                    <input type="text" name="company" id="company" placeholder="EMPRESA">
+                    <input type="email" name="email" id="email" placeholder="O SEU EMAIL" required>
+                    <input type="tel" name="contact" id="tel" placeholder="O SEU CONTACTO">
+                    <textarea name="message" id="message" placeholder="A SUA MENSAGEM" required></textarea>
+                    <div class="btn-submit">
+                        <input type="submit" value="ENVIAR">
+                        <input type="reset" value="LIMPAR">
+                    </div>
                 </form><!-- form -->
+
             </div><!-- interface -->
         </section><!-- talk-to-me -->
 
