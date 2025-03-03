@@ -238,7 +238,6 @@ section.portfolio {
     box-shadow: 0 0 40px 10px #ffffff25;
 }
 
-
 section.portfolio .flex {
     justify-content: space-around;
     margin-top: 60px;
@@ -258,7 +257,6 @@ section.portfolio .flex {
 .img-port:hover {
     background-position: 100% 100%;
 }
-
 
 .overlay {
     position: absolute;
@@ -281,7 +279,6 @@ section.portfolio .flex {
 .overlay:hover {
     opacity: 1;
 }
-
 
 /* Fala comigo */
 

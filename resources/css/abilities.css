@@ -1,0 +1,339 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Geral */
+
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+header .interface img, footer .flex img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.btn-contact button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00FF08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover, form .btn-submit input[type=submit]:hover {
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.05);
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1.title {
+    color: #fff;
+}
+
+.title span {
+    color: #00FF08;
+}
+
+/* Cabeçalho */
+
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+
+
+/* Linguas */
+
+section.languages {
+    padding: 40px 4%;
+}
+
+section.languages h1 {
+    text-align: center;
+}
+
+section.languages .flex {
+    gap: 60px;
+}
+
+.languages .languages-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.languages .interface .flex img {
+    width: 100px;
+    height: 50px;
+}
+
+.languages .languages-box:hover {
+    color: #000;
+    background-color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+
+/* hard skills */
+
+section.hard-skills {
+    padding: 40px 4%;
+}
+
+section.hard-skills h1 {
+    text-align: center;
+}
+
+section.hard-skills .flex {
+    gap: 60px;
+}
+
+.hard-skills .hard-skills-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+
+.hard-skills .hard-skills-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+
+
+/* Linguagens de Programação */
+
+section.programming-languages {
+    padding: 40px 4%;
+}
+
+section.programming-languages h1 {
+    text-align: center;
+}
+
+section.programming-languages .flex {
+    gap: 60px;
+}
+
+.programming-languages .programming-languages-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+
+.programming-languages .programming-languages-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+.programming-languages .interface .flex img {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* Frameworks */
+
+section.frameworks {
+    padding: 40px 4%;
+}
+
+section.frameworks h1 {
+    text-align: center;
+}
+
+section.frameworks .flex {
+    gap: 60px;
+}
+
+.frameworks .frameworks-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+
+.frameworks .frameworks-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+.frameworks .interface .flex img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Soft skills */
+
+section.soft-skills {
+    padding: 40px 4%;
+}
+
+section.soft-skills h1 {
+    text-align: center;
+}
+
+section.soft-skills .flex {
+    gap: 60px;
+}
+
+.soft-skills .soft-skills-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+
+.soft-skills .soft-skills-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+
+/* Ferramentas de Software */
+
+section.software-tools {
+    padding: 40px 4%;
+}
+
+section.software-tools h1 {
+    text-align: center;
+}
+
+section.software-tools .flex {
+    gap: 60px;
+}
+
+.software-tools .software-tools-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+
+.software-tools .software-tools-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+.software-tools .interface .flex img {
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+/* Estilo Rodapé */
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    background-color: #00FF08;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+#codecademy {
+    width: 26px;
+    height: auto;
+    border-radius: 0;
+}
+
+footer {
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #ffffff25;
+}
+
+
+footer .flex {
+    justify-content: space-between;
+}
+
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.border {
+    border-bottom: 2px solid #00FF08;
+}
+
+footer .line-footer p i{
+    color: #00FF08;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #fff;
+    text-decoration: none;
+}
