@@ -152,6 +152,7 @@ section.specialty .flex {
 }
 
 .specialty .specialty-box {
+    text-align: center;
     color: #fff;
     padding: 40px;
     border-radius: 20px;
