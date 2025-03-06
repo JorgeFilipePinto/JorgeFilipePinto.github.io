@@ -199,6 +199,155 @@ section.programming-languages .flex {
 }
 
 
+/*
+.progress-bar {
+    background: #fff;
+    width: 100px;
+    height: 10px;
+    border-radius: 13px;
+    border: 2px solid #fff;
+}
+*/
+
+
+.progress-bar {
+    background: #333;
+    border-radius: 13px;
+    height: 8px;
+    width: 100px;
+}
+
+#progress-bar-python:after{
+    content: '';
+    display: block;
+    background: #00FF08;
+    height: 100%;
+    border-radius: 9px;
+    animation: progress-python 4s ease-in-out forwards;
+}
+
+@keyframes progress-python {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+#progress-bar-java:after{
+    content: '';
+    display: block;
+    background: #00FF08;
+    height: 100%;
+    border-radius: 9px;
+    animation: progress-java 4s ease-in-out forwards;
+}
+
+@keyframes progress-java {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+#progress-bar-c:after{
+    content: '';
+    display: block;
+    background: #00FF08;
+    height: 100%;
+    border-radius: 9px;
+    animation: progress-c 4s ease-in-out forwards;
+}
+
+
+@keyframes progress-c {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+#progress-bar-cpp:after{
+    content: '';
+    display: block;
+    background: #00FF08;
+    height: 100%;
+    border-radius: 9px;
+    animation: progress-cpp 4s ease-in-out forwards;
+}
+
+@keyframes progress-cpp {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+#progress-bar-swift:after{
+    content: '';
+    display: block;
+    background: #00FF08;
+    height: 100%;
+    border-radius: 9px;
+    animation: progress-swift 4s ease-in-out forwards;
+}
+
+@keyframes progress-swift {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+#progress-bar-csharp:after{
+    content: '';
+    display: block;
+    background: #00FF08;
+    height: 100%;
+    border-radius: 9px;
+    animation: progress-csharp 4s ease-in-out forwards;
+}
+
+@keyframes progress-csharp {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 10%;
+    }
+}
+
+#progress-bar-asm:after{
+    content: '';
+    display: block;
+    background: #00FF08;
+    height: 100%;
+    border-radius: 9px;
+    animation: progress-asm 4s ease-in-out forwards;
+}
+
+@keyframes progress-asm {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 10%;
+    }
+}
+
+
+
+
+
 /* Frameworks */
 
 section.frameworks {
@@ -235,6 +384,43 @@ section.frameworks .flex {
     width: 100px;
     height: 100px;
 }
+
+#progress-bar-swiftui:after{
+    content: '';
+    display: block;
+    background: #00FF08;
+    height: 100%;
+    border-radius: 9px;
+    animation: progress-swiftui 4s ease-in-out forwards;
+}
+
+@keyframes progress-swiftui {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+#progress-bar-net:after{
+    content: '';
+    display: block;
+    background: #00FF08;
+    height: 100%;
+    border-radius: 9px;
+    animation: progress-net 4s ease-in-out forwards;
+}
+
+@keyframes progress-net {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 30%;
+    }
+}
+
 
 /* Soft skills */
 
