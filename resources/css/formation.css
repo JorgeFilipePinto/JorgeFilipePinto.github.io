@@ -18,6 +18,7 @@ body {
 .interface {
     max-width: 1280px;
     margin: 0 auto;
+    align-items: center;
 }
 
 .flex {
@@ -45,11 +46,19 @@ button:hover, form .btn-submit input[type=submit]:hover {
     transform: scale(1.05);
 }
 
+h1.title {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
 .title span {
     color: #00FF08;
 }
 
-
+ p span {
+    color: #00FF08;
+}
 
 /* Cabeçalho */
 
@@ -109,6 +118,33 @@ section.formation .flex a {
     transition: .2s;
 }
 
+#estgl:hover{
+    opacity: 0.25;
+    color: #000;
+    font-weight: bold;
+    background-image: url(../images/formation/estgl.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#estga:hover{
+    opacity: 0.25;
+    color: #000;
+    font-weight: bold;
+    background-image: url(../images/formation/estga.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#essps:hover{
+    opacity: 0.25;
+    color: #000;
+    font-weight: bold;
+    background-image: url(../images/formation/essps.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
 .formation .formation-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #ffffff78;
@@ -125,9 +161,6 @@ section.formation .flex a {
     width: 100px;
     height: 100px;
 }
-
-
-
 
 
 
