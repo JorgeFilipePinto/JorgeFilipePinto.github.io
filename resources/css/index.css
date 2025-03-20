@@ -31,13 +31,14 @@ header .interface img, footer .flex img {
     display: flex;
 }
 
+
 .btn-contact button{
     padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
+    /*font-size: 18px;
+    font-weight: 600;*/
     background-color: #00FF08;
-    border: 0;
-    border-radius: 30px;
+    /* border: 0; */
+    /* border-radius: 30px; */
     cursor: pointer;
 }
 
