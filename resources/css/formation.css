@@ -33,11 +33,11 @@ body {
 
 .btn-contact button{
     padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
+    /*font-size: 18px;
+    font-weight: 600;*/
     background-color: #00FF08;
-    border: 0;
-    border-radius: 30px;
+    /* border: 0; */
+    /* border-radius: 30px; */
     cursor: pointer;
 }
 
@@ -72,21 +72,38 @@ header > .interface {
     justify-content: space-between;
 }
 
+/*
 header a {
     color: #5c5c5c;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
-}
+}*/
 
-header a:hover {
-    color: #fff;
+header .navbar-nav .nav-item a:hover {
     transform: scale(1.05);
+    color: #00FF08;
 }
 
+header .dropdown-menu {
+    background-color: #000;
+}
+
+header .dropdown-menu a {
+    color: #fff;
+}
+
+
+header .dropdown-menu a:hover {
+    transform: scale(1);
+    background-color: #000;
+    color: #00FF08;
+}
+
+/*
 header nav ul {
     list-style: none;
-}
+}*/
 
 header nav ul li {
     display: inline-block;
