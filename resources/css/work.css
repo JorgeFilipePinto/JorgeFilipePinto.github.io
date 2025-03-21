@@ -122,8 +122,7 @@ section.work .flex {
     text-decoration: none;
 }
 
-.work .work-box {
-    color: #fff;
+.work .card {
     background-color: #ffffff34;
     padding: 40px;
     border-radius: 20px;
@@ -131,7 +130,8 @@ section.work .flex {
     transition: .2s;
 }
 
-.work .work-box h2 {
+.work .card h2 {
+    color: #fff;
     text-align: center;
 }
 
@@ -141,10 +141,17 @@ section.work .flex {
     height: 100px;
 }
 
-.work .work-box:hover {
+
+.work .card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #d7ee07bd;
 }
+
+/*
+.work .work-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #d7ee07bd;
+}*/
 
 
 
