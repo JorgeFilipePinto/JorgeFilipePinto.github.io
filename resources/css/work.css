@@ -141,7 +141,7 @@ section.work .flex {
     gap: 20px; /* Espaço entre a imagem e o texto */
 }
 
-.work .card .description p {
+.work .card .description li {
     color: #fff;
     align-items: center;
 }
