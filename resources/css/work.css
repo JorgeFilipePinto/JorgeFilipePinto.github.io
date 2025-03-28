@@ -261,3 +261,93 @@ footer .line-footer p a {
     color: #fff;
     text-decoration: none;
 }
+
+
+
+/* Resposividade */
+
+@media screen and (max-width: 1020px) {
+
+    /* gerais */
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .site-top .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.title {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /* Cabeçalho */
+    .menu-desktop, .btn-contact {
+        display: none;
+    }
+
+    /* Topo do Site*/
+    section.site-top  {
+        padding: 20px 10%;
+    }
+
+    .site-top h1 {
+        font-size: 30px;
+    }
+
+    .site-top .img-site-top {
+        width: 100%;
+    }
+
+    /* Especialidades */
+    section.specialty {
+        padding: 40px 8%;
+    }
+
+    /* Sobre mim */
+    section.about {
+        padding: 80px 8%;
+    }
+
+    section.about .txt-about h2 {
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+
+    /* Portfólio */
+    section.portfolio {
+        padding: 80px 8%;
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portfolio .flex {
+        gap: 60px;
+    }
+
+    /* Fala Comigo */
+    section.talk-to-me {
+        padding: 80px 8%;
+    }
+
+    /* Rodapé */
+    footer .flex {
+        flex-direction: column;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
+}
