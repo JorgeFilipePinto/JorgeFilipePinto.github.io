@@ -22,6 +22,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <script src="../resources/clock.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="../resources/graphic.js"></script>
 
     <title>Habilidades</title>
 </head>
@@ -162,6 +164,43 @@
                         <div class="progress-bar" id="progress-bar-asm"></div>
                         <p></p>
                     </div><!-- programming-languages-box -->
+                    <div class="graphic">
+                        
+                    </div>
+                    <canvas id="myProgrammingChart" style="width:100%;max-width:600px"></canvas>
+                    <script>
+                        var xValues = ["Python", "Java", "C", "C++", "Swift", "C#", "Assembly"];
+                        var yValues = [10, 20, 10, 20, 30, 5, 5];
+                        var barColors = [
+                        "#b91d47",
+                        "#00aba9",
+                        "#2b5797",
+                        "#e8c3b9",
+                        "#1e7145",
+                        "#1e5145",
+                        "#1e7205"
+                        ];
+
+                        new Chart("myProgrammingChart", {
+                        type: "doughnut",
+                        data: {
+                            labels: xValues,
+                            datasets: [{
+                            backgroundColor: barColors,
+                            data: yValues
+                            }]
+                        },
+                        options: {
+    
+                            legend: {
+                                labels: {
+                                    fontColor: "#00FF08",
+                                    fontSize: 18
+                                }
+                            }
+                        }
+                        });
+                    </script>
                 </div><!-- flex -->
             </div><!-- interface -->
         </section><!-- programming-languages -->
@@ -182,6 +221,35 @@
                         <div class="progress-bar" id="progress-bar-net"></div>
                         <p></p>
                     </div><!-- programming-languages-box -->
+                    <canvas id="frameworks-Chart" style="width:100%;max-width:600px"></canvas>
+                    <script>
+                        var xValues = ["SwiftUI", ".NET"];
+                        var yValues = [90, 10];
+                        var barColors = [
+                        "#1e7145",
+                        "#00aba9"
+                        ];
+    
+                        new Chart("frameworks-Chart", {
+                        type: "doughnut",
+                        data: {
+                            labels: xValues,
+                            datasets: [{
+                            backgroundColor: barColors,
+                            data: yValues
+                            }]
+                        },
+                        options: {
+    
+                            legend: {
+                                labels: {
+                                    fontColor: "#00FF08",
+                                    fontSize: 18
+                                }
+                            }
+                        }
+                        });
+                    </script>
                 </div><!-- flex -->
             </div><!-- interface -->
         </section><!-- programming-languages -->
