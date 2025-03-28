@@ -197,32 +197,42 @@
             </div><!-- interface -->
         </section><!-- site-top -->
 
-        <section class="specialty ">
+        <section class="specialty">
             <div class="interface">
-                <a href="#speciality-collapse" class="btn btn-dark" data-bs-toggle="collapse">
-                    <h2 class="title">MINHAS <span>ESPECIALIDADES.</span></h2>
-                </a> 
-                    <div id="speciality-collapse" class="collapse">
-                        <div class="flex">
-                            <div class="specialty-box">
-                                <i class="bi bi-code-square"></i>
-                                <h3>Programação</h3>
-                                <p>C, C++, C#, Assembly, Java, Python.</p>
-                            </div><!-- specialty-box -->
-                            <div class="specialty-box">
-                                <i class="bi bi-apple"></i>
-                                <h3>Desenvolvimento IOS</h3>
-                                <p>Desenvolvimento em Swift e SwiftUI.</p>
-                            </div><!-- specialty-box -->
-                            <div class="specialty-box">
-                                <i class="bi bi-android2"></i>
-                                <h3>Desenvolvimento Android</h3>
-                                <p>Desenvolvimento em Java.</p>
-                            </div><!-- specialty-box -->
-                        </div><!-- flex -->
-                    </div><!-- Collapse -->
-            </div><!-- interface -->
-        </section><!-- specialty  -->
+                <button id="collapse" class="btn btn-dark d-flex align-items-center w-100" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#speciality-collapse" 
+                        aria-expanded="false" 
+                        aria-controls="speciality-collapse">
+                    <h2 class="title mb-0">MINHAS <span>ESPECIALIDADES.</span></h2>
+                    <span class="arrow-hint ms-3">
+                        <i id="arrow" class="bi bi-arrow-left arrow-icon"></i>
+                    </span>
+                </button>
+                
+                <!-- Conteúdo collapsible -->
+                <div id="speciality-collapse" class="collapse">
+                    <div class="flex">
+                        <div class="specialty-box">
+                            <i class="bi bi-code-square"></i>
+                            <h3>Programação</h3>
+                            <p>C, C++, C#, Assembly, Java, Python.</p>
+                        </div>
+                        <div class="specialty-box">
+                            <i class="bi bi-apple"></i>
+                            <h3>Desenvolvimento IOS</h3>
+                            <p>Desenvolvimento em Swift e SwiftUI.</p>
+                        </div>
+                        <div class="specialty-box">
+                            <i class="bi bi-android2"></i>
+                            <h3>Desenvolvimento Android</h3>
+                            <p>Desenvolvimento em Java.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
         <section class="about" id="about">
             <div class="interface">
@@ -250,6 +260,20 @@
         <section class="portfolio">
             <div class="interface">
                 <h2 class="title"> O MEU <span>PORTFÓLIO.</span></h2>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="resources/images/projects/project4.jpeg" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="resources/images/projects/project5.jpeg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="resources/images/projects/project6.jpeg" alt="Third slide">
+                      </div>
+                    </div>
+                  </div>
+
                 <div class="flex">
                     <div class="img-port" style="background-image: url(resources/images/projects/project1.jpg);">
                         <div class="overlay">NOME DO PROJETO 1</div><!-- overlay -->

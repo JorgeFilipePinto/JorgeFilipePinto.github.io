@@ -216,6 +216,49 @@ section.specialty {
     padding: 40px 4%;
 }
 
+section.specialty #collapse {
+    background-color: #000;
+    border: none;
+}
+
+section.specialty #arrow {
+    color: #00FF08;
+}
+
+.arrow-hint {
+    display: flex;
+    align-items:center;
+    gap: 8px;
+    position: relative;
+}
+
+/* Texto "Click aqui" - sempre visível e animado */
+.arrow-text {
+    font-size: 0.9rem;
+    color: #fff;
+    position: absolute;
+    right: 100%;
+    white-space: nowrap;
+    animation: slideText 2s infinite;
+}
+
+/* Seta - sempre animada */
+.arrow-icon {
+    font-size: 1.5rem;
+    color: #fff;
+    animation: bounce 0.8s infinite alternate;
+}
+
+/* Animação de bounce da seta */
+@keyframes bounce {
+    from {
+        transform: translateX(-5px);
+    }
+    to {
+        transform: translateX(5px);
+    }
+}
+
 section.specialty .flex {
     gap: 60px;
 }
