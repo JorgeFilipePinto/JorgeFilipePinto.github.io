@@ -108,6 +108,22 @@ header nav ul li {
     padding: 0 40px;
 }
 
+header nav ul li .clock-design {
+    font-size: 1rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+  }
+  
+  .clock-design span {
+    padding: 0 2px;
+    background-color: #000;
+    color: #00FF08;
+  }
+
+
+
 /* Estilo do topo da página*/
 
 section.site-top {

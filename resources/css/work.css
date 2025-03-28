@@ -54,6 +54,20 @@ h1.title {
     color: #00FF08;
 }
 
+header nav ul li .clock-design {
+    font-size: 1rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+  }
+  
+  .clock-design span {
+    padding: 0 2px;
+    background-color: #000;
+    color: #00FF08;
+  }
+
 
 
 /* Cabeçalho */

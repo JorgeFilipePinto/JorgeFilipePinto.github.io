@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relógio em Tempo Real</title>
+  <style>
+    .relogio-container {
+      font-family: 'Arial', sans-serif;
+      font-size: 2rem;
+      text-align: center;
+      margin: 20px;
+      padding: 20px;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+    }
+    
+    .clock {  /* Mudei de .relogio para .clock para combinar com o HTML */
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="relogio-container">
+    <h2>Relógio Digital</h2>
+    <!-- Versão com spans separados -->
+    <div id="relogio-detalhado">
+      <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+    </div>
+    
+    <!-- Versão simplificada -->
+    <div id="clock" class="clock">00:00:00</div>
+  </div>
+
+  <!-- Vincular o arquivo JavaScript no final do body -->
+  <script src="./resources/clock.js"></script> <!-- Certifique-se que o arquivo tem este nome -->
+</body>
+</html>
