@@ -39,7 +39,7 @@ body {
     cursor: pointer;
 }
 
-button:hover:hover {
+button:hover {
     box-shadow: 0px 0px 8px #00ff08;
     transform: scale(1.05);
 }
@@ -170,15 +170,16 @@ section.work .flex {
     transition: .2s;
 }
 
-.work .card h2, h3{
+.work .card h2,
+.work .card h3{
     color: #fff;
     text-align: center;
 }
 
 .work .card .description {
     display: flex;
-    align-items: center; /* Alinha verticalmente */
-    gap: 20px; /* Espaço entre a imagem e o texto */
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .work .card .description li {
@@ -190,6 +191,8 @@ section.work .flex {
 #work-logo {
     width: 130px;
     height: 100px;
+    border-radius: 12px;
+    object-fit: cover;
 }
 
 

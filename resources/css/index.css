@@ -187,6 +187,42 @@ section.site-top .flex {
     margin: 40px 0;
 }
 
+.hero-metrics {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.metric {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px 18px;
+    background-color: rgba(0, 255, 8, 0.08);
+    border: 1px solid rgba(0, 255, 8, 0.25);
+    border-radius: 18px;
+    max-width: 260px;
+}
+
+.metric i {
+    color: #00FF08;
+    font-size: 1.5rem;
+}
+
+.metric-value {
+    font-weight: 700;
+    color: #fff;
+    display: block;
+    font-size: 1.1rem;
+}
+
+.metric-label {
+    color: #d7d7d7;
+    font-size: 0.9rem;
+    display: block;
+}
+
 .site-top .img-site-top {
     position: relative;
     animation: float 2s ease-in-out infinite alternate;
@@ -270,6 +306,8 @@ section.specialty .flex {
     border-radius: 20px;
     margin-top: 45px;
     transition: .2s;
+    background-color: #111;
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .specialty .specialty-box:hover {
@@ -284,6 +322,69 @@ section.specialty .flex {
 
 .specialty .specialty-box h3 {
     font-size: 30px;
+}
+
+.experience-highlight {
+    padding: 60px 4%;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.experience-card {
+    background: linear-gradient(135deg, rgba(0, 255, 8, 0.08), rgba(0, 0, 0, 0.95));
+    border: 1px solid rgba(0, 255, 8, 0.25);
+    border-radius: 24px;
+    padding: 28px;
+    color: #fff;
+}
+
+.experience-card header {
+    margin-bottom: 16px;
+}
+
+.experience-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+}
+
+.experience-card ul {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.experience-card ul li {
+    text-align: left;
+}
+
+.experience-card.secondary {
+    background: rgba(17, 17, 17, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.experience-period {
+    font-size: 0.85rem;
+    color: #00FF08;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.experience-location {
+    font-size: 0.9rem;
+    color: #d7d7d7;
+}
+
+.experience-cta {
+    margin-top: 32px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
 }
 
 
@@ -324,6 +425,23 @@ section.about .flex img {
 .about .txt-about p {
     margin: 20px 0;
     text-align: justify;
+}
+
+.skill-badges {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 10px 0 20px;
+}
+
+.skill-badges span {
+    background-color: rgba(0, 255, 8, 0.12);
+    border: 1px solid rgba(0, 255, 8, 0.4);
+    color: #00FF08;
+    padding: 8px 14px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
 }
 
 .btn-social button {
@@ -382,15 +500,44 @@ section.portfolio .flex {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
-    font-weight: 600;
     color: #fff;
     opacity: 0;
     transition: .5s;
+    padding: 30px;
+    text-align: left;
 }
 
 .overlay:hover {
     opacity: 1;
+}
+
+.overlay h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 14px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: rgba(0, 255, 8, 0.18);
+    border: 1px solid rgba(0, 255, 8, 0.4);
+    color: #00FF08;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.portfolio-note {
+    color: #d7d7d7;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.95rem;
 }
 
 /* Fala comigo */
@@ -435,22 +582,57 @@ form input::placeholder, form textarea::placeholder {
 }*/
 
 form .btn-submit {
-    margin-top: 20px;
-    text-align: center;
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
 }
 
-
-form .btn-submit input {
-    width: 120px;
-    background-color: #00FF08;
-    color: #000;
+form .btn-submit button {
+    border: none;
+    padding: 16px 28px;
+    border-radius: 50px;
+    font-size: 0.95rem;
     font-weight: 700;
+    letter-spacing: 0.4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     cursor: pointer;
-    transition: .2s;
+    transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease;
 }
 
-form .btn-submit input[type="reset"] {
-    margin-left: 20px;
+form .btn-submit button i {
+    font-size: 1.1rem;
+}
+
+form .btn-submit button:focus-visible {
+    outline: 2px solid #00FF08;
+    outline-offset: 3px;
+}
+
+.cta-primary {
+    background: linear-gradient(135deg, #00ff6f, #00bbff);
+    color: #000;
+    box-shadow: 0 0 25px rgba(0, 255, 8, 0.25);
+}
+
+.cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0, 255, 8, 0.35);
+}
+
+.cta-reset {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    color: #fff;
+}
+
+.cta-reset:hover {
+    border-color: #00FF08;
+    color: #00FF08;
+    transform: translateY(-2px);
 }
 /* Estilo Rodapé */
 
@@ -521,9 +703,25 @@ footer .line-footer p a {
         width: 100%;
     }
 
+    .hero-metrics {
+        flex-direction: column;
+    }
+
+    .metric {
+        max-width: 100%;
+    }
+
     /* Especialidades */
     section.specialty {
         padding: 40px 8%;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-cta {
+        justify-content: center;
     }
 
     /* Sobre mim */
@@ -537,8 +735,22 @@ footer .line-footer p a {
         text-align: center;
     }
 
+    .skill-badges {
+        justify-content: center;
+    }
+
     .btn-social {
         text-align: center;
+    }
+
+    form .btn-submit {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    form .btn-submit button {
+        width: 100%;
+        justify-content: center;
     }
 
     /* Portfólio */
@@ -558,7 +770,7 @@ footer .line-footer p a {
 
     /* Fala Comigo */
     section.talk-to-me {
-        padding: 80px 8%;
+        padding: 80px 10%;
     }
 
     /* Rodapé */
